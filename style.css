@@ -105,9 +105,14 @@ section h2 {
     text-decoration: underline;
 }
 
+
 section p {
     color: whitesmoke;
+    margin: auto;
+    padding: 10px;
     letter-spacing: 1px;
+    width: 40%;
+    word-wrap: break-word;
     text-align: center;
 }
 
@@ -130,7 +135,13 @@ section p {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    transition: transform 0.5s;
 }
+
+.box:hover img {
+    transform: scale(1.2);
+}
+
 
 .box .overlay {
     position: absolute;
@@ -153,7 +164,7 @@ section p {
 
 .box .overlay .title {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: blanchedalmond;
@@ -172,4 +183,13 @@ section p {
     color: white;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+    margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #ccc;
+    padding: 20px;
+    text-align: center;
 }
